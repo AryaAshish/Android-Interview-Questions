@@ -68,7 +68,7 @@ This is a compilation of Important Android Interview questions and answers.
 - **Rule of Thumb:** Use the context directly available from the enclosing component, ensuring the reference does not extend beyond the component's lifecycle. Switch to the application context for references that outlive the Activity or Service.
 
 
-4. **Tell all the Android application components.**
+ **Tell all the Android application components.**
 
    - **Activities:**
      - Entry point for user interaction.
