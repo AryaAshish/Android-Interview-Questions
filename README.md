@@ -67,5 +67,33 @@ This is a compilation of Important Android Interview questions and answers.
   
 - **Rule of Thumb:** Use the context directly available from the enclosing component, ensuring the reference does not extend beyond the component's lifecycle. Switch to the application context for references that outlive the Activity or Service.
 
+
+4. **Tell all the Android application components.**
+
+   - **Activities:**
+     - Entry point for user interaction.
+     - Represents a single screen with a user interface.
+     - Can be used to show a list of items, compose an email, read emails, etc.
+     - Activities work independently but can interact with each other.
+
+   - **Services:**
+     - General-purpose entry point for keeping an app running in the background.
+     - Performs long-running operations or work for remote processes.
+     - Runs without a user interface.
+     - Can be started (to run in the background) or bound (to interact with other components).
+
+   - **Broadcast Receivers:**
+     - Listens for system-wide broadcast announcements.
+     - Allows the system to deliver events to the app outside of regular user flow.
+     - Can respond to events like the screen turning off, low battery, or a picture being captured.
+     - Doesn't have a user interface but can create status bar notifications.
+
+   - **Content Providers:**
+     - Manages a shared set of app data that can be stored in various locations.
+     - Data can be stored in the file system, SQLite database, web, or other persistent storage.
+     - Allows other apps to query or modify data if the content provider permits it.
+     - Provides a fine-grained security model and is useful for sharing data between apps.
+
+   Understanding and effectively using these components is crucial for designing and developing Android applications.
 ---
 
